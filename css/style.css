@@ -91,7 +91,7 @@ h2 {
     color: #FFF;
 }
 .yellow {
-    color: #FBAF40;
+    color: #FBAF40 !important;
 }
 .ml-md-0-313 {
     margin-left: 0.313em;
