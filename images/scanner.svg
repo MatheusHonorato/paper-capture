@@ -1,0 +1,11 @@
+<svg id="Componente_1_1" data-name="Componente 1 – 1" xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101">
+  <g id="Elipse_143" data-name="Elipse 143" fill="#fff" stroke="#707070" stroke-width="1">
+    <circle cx="50.5" cy="50.5" r="50.5" stroke="none"/>
+    <circle cx="50.5" cy="50.5" r="50" fill="none"/>
+  </g>
+  <g id="Grupo_729" data-name="Grupo 729" transform="translate(26.393 28.107)">
+    <g id="Grupo_728" data-name="Grupo 728" transform="translate(0 0)">
+      <path id="Caminho_1832" data-name="Caminho 1832" d="M43.721,28.791H38.693V19.645a1.58,1.58,0,0,0-1.58-1.58H10.3a1.58,1.58,0,0,0-1.58,1.58v9.146H3.687A3.692,3.692,0,0,0,0,32.479v15.9a3.691,3.691,0,0,0,3.687,3.687H8.716v8.483a1.58,1.58,0,0,0,1.58,1.58H37.113a1.58,1.58,0,0,0,1.58-1.58V52.065h5.028a3.691,3.691,0,0,0,3.687-3.687v-15.9A3.692,3.692,0,0,0,43.721,28.791ZM11.876,21.226H35.533v7.566H11.876ZM35.532,58.968H11.876V46.039H35.532C35.532,46.43,35.532,58.671,35.532,58.968Zm1.581-20.9H33.09a1.58,1.58,0,1,1,0-3.161h4.023a1.58,1.58,0,0,1,0,3.161Z" transform="translate(0 -18.065)" fill="#2241f2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="370.265" height="73.125" viewBox="0 0 370.265 73.125">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_2152" data-name="Caminho 2152" d="M56.722,16.03h3.314a1.165,1.165,0,0,0,1.154-1.154V11.006a.577.577,0,0,1,.577-.567h1.657A.588.588,0,0,0,64,9.863V8.206a.577.577,0,0,0-.577-.577H61.767a.577.577,0,0,0-.577.577V9.863a.577.577,0,0,1-.577.577H56.722a1.154,1.154,0,0,0-1.154,1.144V14.9a1.165,1.165,0,0,0,1.154,1.133M25.659,44.891V41.577a1.165,1.165,0,0,1,1.154-1.154h3.314a1.165,1.165,0,0,1,1.154,1.154v3.891a.577.577,0,0,0,.567.577h1.71a.577.577,0,0,1,.577.567v1.7a.577.577,0,0,1-.577.577h-1.71a.577.577,0,0,1-.567-.577V46.655a.577.577,0,0,0-.577-.567H26.813a1.165,1.165,0,0,1-1.154-1.2ZM42.27,37.943H35.985a2.2,2.2,0,0,1-2.191-2.138V29.467a2.2,2.2,0,0,1,2.191-2.138H42.3a2.138,2.138,0,0,0,2.138-2.138v-11.2a3.453,3.453,0,0,1,2.619-3.3h5.879a2.138,2.138,0,0,0,2.138-2.138V2.188A2.191,2.191,0,0,0,52.938.05h-6.3A2.191,2.191,0,0,0,44.5,2.241V8.473a2.191,2.191,0,0,1-2.191,2.138H20.646a1.924,1.924,0,0,0-1.422.588L9.978,20.391a1.924,1.924,0,0,0-.588,1.422V71.176a2,2,0,0,0,2,2H59.212a2.01,2.01,0,0,0,2.01-2V28.419a1.154,1.154,0,0,1,1.154-1.154h3.25A1.154,1.154,0,0,0,66.77,26.11V22.8a1.154,1.154,0,0,0-1.144-1.133H62.312a1.154,1.154,0,0,0-1.154,1.154v3.314A1.165,1.165,0,0,1,60,27.286H46.642A2.138,2.138,0,0,0,44.5,29.424v6.3a2.191,2.191,0,0,1-2.234,2.223Z" transform="translate(-9.39 -0.05)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1.063" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1e27e7"/>
+      <stop offset="1" stop-color="#2cd1ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Camada_2" data-name="Camada 2" transform="translate(0 -0.05)">
+    <g id="Camada_1" data-name="Camada 1" transform="translate(0 0.05)">
+      <g id="Grupo_753" data-name="Grupo 753" transform="translate(10.037)" clip-path="url(#clip-path)">
+        <rect id="Retângulo_685" data-name="Retângulo 685" width="57.422" height="73.178" transform="translate(0 -0.053)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="Caminho_2153" data-name="Caminho 2153" d="M10.625,20.361l9.246-9.246a1.924,1.924,0,0,1,1.422-.588H42.917a2.191,2.191,0,0,0,2.191-2.138V2.158A2.138,2.138,0,0,1,45.878.49H11.256a1.892,1.892,0,0,0-1.411.545l-9.257,9.3A1.892,1.892,0,0,0,0,11.724V61.108a2,2,0,0,0,2,2h8.038V21.783a1.924,1.924,0,0,1,.588-1.422" transform="translate(0 -0.02)" fill="#1d1e30" fill-rule="evenodd"/>
+      <text id="Paper_Capture" data-name="Paper Capture" transform="translate(89.265 52.707)" fill="#333" font-size="34" font-family="Poppins-SemiBold, Poppins" font-weight="600" letter-spacing="0.07em"><tspan x="0" y="0">Paper Capture</tspan></text>
+    </g>
+  </g>
+</svg>
