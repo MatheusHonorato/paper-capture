@@ -27,6 +27,9 @@ h2 {
     font-weight: lighter;
     font-size: 1.55em;
 }
+.decoration-none {
+    text-decoration: none !important;
+}
 .line-h-2-5 {
     line-height: 2.5em;
 }
