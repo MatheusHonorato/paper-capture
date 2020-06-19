@@ -564,6 +564,15 @@ header, section {
     #hamburger {
         display: flex;
     }
+    .pl-xs-2-5 {
+        padding-left: 2.5em;
+    }
+    .pr-xs-2-5 {
+        padding-right: 2.5em;
+    }
+    .pl-md-5 {
+        padding-left: 0em;
+    }
 }
 @media only screen and (max-width: 905px) {
     .flex-md-between {
@@ -602,6 +611,12 @@ header, section {
     .pt-8 {
         padding-top: 0em;
     }
+    .pl-md-2-5 {
+        padding-left: 0em;
+    }
+    .pr-md-2-5 {
+        padding-right: 0em;
+    }
     .pr-md-8-5 {
         padding-right: 2.5em;
     }
@@ -622,12 +637,6 @@ header, section {
     }
     .width-900 {
         width: 100%;
-    }
-    .pl-xs-2-5 {
-        padding-left: 2.5em;
-    }
-    .pr-xs-2-5 {
-        padding-right: 2.5em;
     }
 }
 
