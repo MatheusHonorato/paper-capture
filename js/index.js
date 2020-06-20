@@ -121,7 +121,6 @@ function isVisible(element) {
         return false;
     }
 }
-
 function scanDocument() {
     let sectionList = document.querySelectorAll('.hidden');
     sectionList.forEach(function(section) {
@@ -130,6 +129,4 @@ function scanDocument() {
         };
     });
 }
-
-
 document.addEventListener("scroll", scanDocument);
