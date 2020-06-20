@@ -5,7 +5,7 @@ window.onscroll = function (oEvent) {
     var btn_one = document.querySelector("#btn-acess-one")
     var btn_two = document.querySelector("#btn-acess-two")
 
-    if(window.scrollY <= 0) {
+    if(window.scrollY <= 50) {
         header.style.backgroundColor = 'transparent'
         btn_one.style.display = 'none'
         btn_two.style.display = 'flex'
