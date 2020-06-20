@@ -4,7 +4,7 @@ body, ul, li, a, h1, h2, h3, h4, h5, h6, h7, div, section {
     margin: 0;
     border: 0;
     font-weight: normal;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', 'Arial', sans-serif;
 }
 body {
     background: #FFF;
