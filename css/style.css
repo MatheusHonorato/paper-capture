@@ -664,6 +664,9 @@ header, section {
     .h-70vh {
         height: 90vh;
     }
+    .banner-item {
+        padding-top: 8.188em;
+    }
 }
 
 @media only screen and (max-width: 915px) {
