@@ -447,8 +447,9 @@ nav ul ul {
 #hamburger {
     display: none;
     background: url('../images/menu.svg') no-repeat center;
-    background-color: #FFF;
+    background-color: #2241F2;
     background-size: 75%;
+    border: solid 5px  #2241F2;
     border-radius: 50px;
     width: 3em;
     height: 3em;
