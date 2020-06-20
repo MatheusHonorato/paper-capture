@@ -2,19 +2,17 @@ window.onscroll = function (oEvent) {
     
     var header = document.querySelector("header")
     var menu = document.querySelector("#menu")
-    var logo_one = document.querySelector("#logo_one")
-    var logo_two = document.querySelector("#logo_two")
-    
+    var btn_one = document.querySelector("#btn-acess-one")
+    var btn_two = document.querySelector("#btn-acess-two")
+
     if(window.scrollY == 0) {
         header.style.backgroundColor = 'transparent'
-        menu.style.color = '#FFF'
-        logo_one.style.display = 'block'
-        logo_two.style.display = 'none'
+        btn_one.style.display = 'none'
+        btn_two.style.display = 'flex'
     } else {
-        header.style.backgroundColor = '#FFF'
-        menu.style.color = '#333'
-        logo_one.style.display = 'none'
-        logo_two.style.display = 'block'
+        header.style.backgroundColor = '#2241F2'
+        btn_one.style.display = 'flex'
+        btn_two.style.display = 'none'
     }
 
 }
