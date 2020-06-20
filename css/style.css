@@ -45,6 +45,9 @@ h2 {
 .italic {
     font-style: italic;
 }
+.mb-0 {
+    margin-bottom: 0em !important;
+}
 .mb-1 {
     margin-bottom: 1em;
 }
@@ -206,6 +209,17 @@ header {
 }
 nav {
     flex: 1;
+}
+section, footer {
+    clear: both;
+    margin-bottom: 30px;
+    display: block;
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+.hidden {
+    opacity: 0;
 }
 .relative {
     position: relative;
@@ -370,8 +384,8 @@ nav ul ul {
 .pr-35 {
     padding-right: 35px !important;
 }
-.h-100vh {
-    min-height: 75vw;
+.h-70vh {
+    min-height: 70vw;
 }
 .font-1-7 {
     font-size: 1.7em;
