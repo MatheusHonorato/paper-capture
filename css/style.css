@@ -661,6 +661,9 @@ header, section {
     .width-900 {
         width: 100%;
     }
+    .h-70vh {
+        height: 100vh;
+    }
 }
 
 @media only screen and (max-width: 915px) {
