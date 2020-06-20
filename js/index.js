@@ -6,12 +6,11 @@ window.onscroll = function (oEvent) {
     var btn_two = document.querySelector("#btn-acess-two")
 
     if(window.scrollY == 0) {
-        header.style.backgroundImage = 'none'
         header.style.backgroundColor = 'transparent'
         btn_one.style.display = 'none'
         btn_two.style.display = 'flex'
     } else {
-        header.style.backgroundImage = 'linear-gradient(to right, #2241F2 , #276BF2, #277FF2)'
+        header.style.backgroundColor = '#2241F2'
         btn_one.style.display = 'flex'
         btn_two.style.display = 'none'
     }
