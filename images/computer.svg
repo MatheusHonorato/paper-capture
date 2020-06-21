@@ -1,8 +1,5 @@
-<svg id="Componente_3_1" data-name="Componente 3 – 1" xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101">
-  <g id="Elipse_145" data-name="Elipse 145" fill="#fff" stroke="#707070" stroke-width="1">
-    <circle cx="50.5" cy="50.5" r="50.5" stroke="none"/>
-    <circle cx="50.5" cy="50.5" r="50" fill="none"/>
-  </g>
+<svg id="Componente_4_1" data-name="Componente 4 – 1" xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101">
+  <circle id="Elipse_145" data-name="Elipse 145" cx="50.5" cy="50.5" r="50.5" fill="#fff"/>
   <g id="computer" transform="translate(25.616 28)">
     <path id="Caminho_1833" data-name="Caminho 1833" d="M140.509,434.872h-3.646V433H119.124v1.872h-3.646a1.478,1.478,0,0,0,0,2.956h25.031a1.478,1.478,0,1,0,0-2.956Z" transform="translate(-102.766 -393.285)" fill="#2241f2"/>
     <path id="Caminho_1834" data-name="Caminho 1834" d="M91.478,283a1.478,1.478,0,1,0,1.478,1.478A1.48,1.48,0,0,0,91.478,283Z" transform="translate(-81.131 -258.067)" fill="#04579e"/>

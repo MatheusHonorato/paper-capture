@@ -24,12 +24,10 @@ h1 {
     font-size: 3.5em;
     line-height: 1.2em;
 }
-
 h2 {
     font-weight: lighter;
     font-size: 1.55em;
 }
-
 #btn-acess-one {
     display: none;
 }
@@ -211,7 +209,9 @@ header {
     right: 0;
     background-color: transparent;
     color: #FFF;
-    padding: 35px;
+    padding: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 nav {
     flex: 1;
@@ -223,15 +223,14 @@ section, footer {
     opacity: 1;
     transition: opacity 2s ease;
 }
-
 .hidden {
     opacity: 0;
 }
 .relative {
     position: relative;
 } 
-.top-m-130 {
-    top: -130px;
+.top-m-70 {
+    top: -70px;
 }
 .flex-between {
     justify-content: space-between;
@@ -278,6 +277,9 @@ section, footer {
 .pr-2-5 {
     padding-right: 2.5em;
 }
+.pl-5 {
+    padding-left: 5em;
+}
 .pl-xs-2-5 {
     padding-left: 0px;
 }
@@ -299,8 +301,17 @@ section, footer {
 .pt-0 {
     padding-top: 0px;
 }
+.pt-1 {
+    padding-top: 1em;
+}
+.pb-1 {
+    padding-bottom: 1em;
+}
 .pt-2 {
     padding-top: 2em;
+}
+.pb-2 {
+    padding-bottom: 2em;
 }
 .pt-md-6 {
     padding-top: 6em;
@@ -320,14 +331,20 @@ section, footer {
 .ml-md-1-1  {
     margin-left: 1.1em;
 }
+.ml-md-1-8  {
+    margin-left: 1.8em;
+}
 .mr-1  {
     margin-right: 1em;
 }
 .mr-md-1-1  {
     margin-right: 1.1em;
 }
-#menu li, #contact li {
-    font-size: 17px;
+#menu li {
+    font-size: 14px;
+}
+#contact li {
+    font-size: 23px;
 }
 #menu li a:hover {
     color: #FBAF40;
@@ -350,6 +367,12 @@ nav ul ul {
 }
 .flex-center {
     justify-content: center;
+}
+.flex-start {
+    justify-content: flex-start;
+}
+.flex-end {
+    justify-content: flex-end;
 }
 .pl-md-1-563 {
     padding-left: 1.563em;
@@ -384,6 +407,12 @@ nav ul ul {
 .pt-0 {
     padding-top: 0px;
 }
+.pl-0 {
+    padding-left: 0px !important;
+}
+.pr-0 {
+    padding-right: 0px !important;
+}
 .pl-35 {
     padding-left: 35px !important;
 }
@@ -411,8 +440,8 @@ nav ul ul {
 .width-100 {
     width: 100%;
 }
-.width-900 {
-    width: 900px;
+.width-80 {
+    width: 80%;
 }
 .max-100 {
     max-width: 150px;
@@ -452,8 +481,8 @@ nav ul ul {
     background: url('../images/menu.svg') no-repeat center;
     background-color: #2241F2;
     background-size: 75%;
-    border: solid 5px  #2241F2;
-    border-radius: 50px;
+    border: solid 0.3px  #2241F2;
+    border-radius: 5px;
     width: 3em;
     height: 3em;
 }
@@ -503,8 +532,7 @@ header, section {
     padding: 0px !important;
     position: fixed;
     bottom: 10px;
-    right: 10px;
-    border-radius: 5px;
+    right: 1em;
     border: none;
 }
 #loader { 
@@ -623,11 +651,17 @@ header, section {
     .ml-md-1-1 {
         margin-left: 0px;
     }
+    .ml-md-1-8 {
+        margin-left: 0px;
+    }
     .pt-md-0 {
         padding-top: 3em;
     }
     .mb-xs-1 {
         margin-bottom: 1em;
+    }
+    .pl-5 {
+        padding-left: 2.2em;
     }
     .pt-md-10em {
         padding-top: 5em;
@@ -665,7 +699,7 @@ header, section {
     .pl-md-5 {
         padding-left: 0em;
     }
-    .width-900 {
+    .width-80 {
         width: 100%;
     }
     .h-70vh {
@@ -674,8 +708,20 @@ header, section {
     .banner-item {
         padding-top: 8.188em;
     }
+    #hamburger {
+        background-color: transparent;
+        border: none;
+    }
+    header {
+        padding: 35px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #footer-relative .font-2 {
+        font-size: 1.3em;
+        margin-bottom: 1em;
+    }
 }
-
 @media only screen and (max-width: 915px) {
     #footer-relative {
         border-radius: 0px;
