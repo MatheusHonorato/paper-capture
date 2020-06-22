@@ -731,6 +731,12 @@ header, section {
         padding-left: 0em;
         padding-right: 0em;
     }
+    .pb-xs-0 {
+        padding-bottom: 0em;
+    }
+    .text-xs-left {
+        text-align: left;
+    }
 }
 @media only screen and (max-width: 915px) {
     #footer-relative {
