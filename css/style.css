@@ -433,9 +433,6 @@ nav {
 #btn-acess-one {
     display: none;
 }
-#logo_two {
-    display: none;
-}
 /* cursor */
 a, button, #hamburger {
     cursor: pointer;
