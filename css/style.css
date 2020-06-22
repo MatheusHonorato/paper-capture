@@ -133,7 +133,7 @@ h2 {
 .font-2-4 {
     font-size: 2.4em;
 }
-.font-3em {
+.font-3 {
     font-size: 3em;
 }
 #menu li {
@@ -642,7 +642,7 @@ header, section {
     .flex-md-between {
         flex-direction: column;
     }
-    .font-3em {
+    .font-3 {
         font-size: 1.8em;
     }
     #illustration {
@@ -712,7 +712,7 @@ header, section {
         height: 100vh;
     }
     .banner-item {
-        padding-top: 8.188em;
+        padding-top: 7.188em;
     }
     #hamburger {
         background-color: transparent;
