@@ -727,6 +727,10 @@ header, section {
         font-size: 1.3em;
         margin-bottom: 1em;
     }
+    #logo img {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
 }
 @media only screen and (max-width: 915px) {
     #footer-relative {
