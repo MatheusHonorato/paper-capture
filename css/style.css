@@ -734,6 +734,9 @@ header, section {
     .pb-xs-0 {
         padding-bottom: 0em;
     }
+    .pt-xs-0 {
+        padding-top: 0em;
+    }
     .text-xs-left {
         text-align: left;
     }
