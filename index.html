@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <title>Paper Capture</title>
 </head>
 <body>
     <header>
         <nav class="flex align-items-center flex-between">
             <a class="flex flex-start" href="./" id="logo">
-                <img src="images/logo.svg" width="208px">
+                <img class="width-208p" src="images/logo.svg">
             </a>
-            <ul id="menu" class="flex background-transparent">
-                <li class="ml-md-1-8"><a>Quem Somos</a></li>
-                <li class="ml-md-1-8"><a>Softwares</a></li>
-                <li class="ml-md-1-8"><a>Serviços</a></li>
-                <li class="ml-md-1-8"><a>Contato</a></li>
-                <li class="ml-md-1-8"><a>Blog</a></li>
+            <ul id="menu" class="flex background-transparent font-0-9">
+                <li class="ml-md-1-8"><a class="yellow-hover">Quem Somos</a></li>
+                <li class="ml-md-1-8"><a class="yellow-hover">Softwares</a></li>
+                <li class="ml-md-1-8"><a class="yellow-hover">Serviços</a></li>
+                <li class="ml-md-1-8"><a class="yellow-hover">Contato</a></li>
+                <li class="ml-md-1-8"><a class="yellow-hover">Blog</a></li>
             </ul>
-            <ul id="contact" class="flex flex-end background-transparent">
+            <ul id="contact" class="flex flex-end background-transparent font-1-4">
                 <li class="flex align-items-center"><img src="images/phone.svg"></li>
                 <li class="flex align-items-center pl-0 pr-0 ml-md-0-313 bold-700 yellow">0800 34 39 026</li>
                 <a><li id="btn-acess-one" class="btn ml-md-1-563 bold-700 back-white back-blue-shadow flex align-items-center black">ENTRAR</li></a>
@@ -41,7 +41,7 @@
     </ul>
     <section id="banner" class="flex h-70vh back-blue-gradient">
         <div id="banner-left" class="banner-item white pl-5 pr-2-5 css-typing">
-            <img class="mb-2" src="images/icon-banner-left.svg" width="8%">
+            <img class="width-8 mb-2" src="images/icon-banner-left.svg">
             <h1>O <span class="yellow">Paper Capture</span> é um<br>poderoso software<br>TWAIN.</h1>
             <h2>Centrado em uma ideia: simplificar a digitalização<br>de documentos.</h2>
             <button class="btn btn-action back-green-d back-green-d-shadow bold-700 mt-1 white">Saiba Mais</button>
@@ -59,7 +59,7 @@
             <div class="flex max-1060 item">
                 <div class="flex item">
                     <div class="flex flex-center align-items-base">
-                        <img src="images/scanner.svg" max-width="50%">
+                        <img src="images/scanner.svg">
                     </div>
                     <div class="max-950 pl-md-1-563 pr-md-55 pt-md-2-5">
                         <h3 class="bold-700">Scannear/Importar</h3>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="flex item">
                     <div class="flex flex-center align-items-base">
-                        <img src="images/correct.svg" max-width="50%">
+                        <img src="images/correct.svg">
                     </div>
                     <div class="max-950 pl-md-1-563 pr-md-55 pt-md-2-5">
                         <h3 class="bold-700">Controle de Qualidade</h3>
@@ -79,7 +79,7 @@
             <div class="flex max-1060 item">
                 <div class="flex item">
                     <div class="flex flex-center align-items-base">
-                        <img src="images/computer.svg" max-width="50%">
+                        <img src="images/computer.svg">
                     </div>
                     <div class="max-950 pl-md-1-563 pr-md-55 pt-md-2-5">
                         <h3 class="bold-700">Índice</h3>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="flex item">
                     <div class="flex flex-center align-items-base">
-                        <img src="images/export.svg" max-width="50%">
+                        <img src="images/export.svg">
                     </div>
                     <div class="max-950 pl-md-1-563 pr-md-55 pt-md-2-5">
                         <h3 class="bold-700">Exportar</h3>
@@ -110,19 +110,19 @@
         <h4 class="bold-700 font-1-7 line-h-1-7">Veja a comparação abaixo e escolha a versão que atenda a sua necessidade.</h4>
         <div class="flex flex-column-xs pt-2 width-100 max-950 bold-700 black">
             <div class="flex flex-column flex-item-1 m-1 p-2 pt-2 back-white radius-20 justify-between">
-                <img class="mb-1" src="images/gift.svg" width="50px">
+                <img class="mb-1 width-50px" src="images/gift.svg">
                 <h3 class="bold-900 green">FREE</h3>
                 <p>A edição gratuita do software Paper Capture permite que os usuários se beneficiem gratuitamente das vantagens de uma ferramenta universal de digitalização* com recursos de processamento.</p>
                 <button class="btn btn-plus mt-1 white max-100 back-green back-green-shadow">BAIXAR</button>
             </div>
             <div class="flex flex-column flex-item-1 m-1 p-2 pt-2 back-white radius-20 justify-between">
-                <img class="mb-1" src="images/home.svg" width="50px">
+                <img class="mb-1 width-50px" src="images/home.svg">
                 <h3 class="bold-900 yellow">HOME</h3>
                 <p>A versão Home do Paper Capture é uma versão leve, permitindo que os usuários com necessidades diárias de digitalização e processamento realizem suas tarefas através de um aplicativo realmente acessível.</p>
                 <button class="btn btn-plus mt-1 white max-100 back-yellow back-yellow-shadow">COMPRAR AGORA</button>
             </div>
             <div class="flex flex-column flex-item-1 m-1 p-2 pt-2 back-white radius-20 justify-between">
-                <img class="mb-1" src="images/company.svg" width="50px">
+                <img class="mb-1 width-50px" src="images/company.svg">
                 <h3 class="bold-900 blue">PROFISSIONAL</h3>
                 <p>A versão Professional do Paper Capture e é a edição mais completa, oferecendo aos usuários finais profissionais todos os recursos necessários, para a captura, indexação e diferentes integrações de armazenamento.</p>
                 <button class="btn btn-plus mt-1 white max-100 back-blue back-blue-shadow">COMPRAR AGORA</button>
@@ -137,7 +137,7 @@
             <button class="btn btn-plus mt-1 white max-100 back-yellow back-yellow-shadow">COMPRAR AGORA</button>
         </div>
         <div class="flex flex-item-5 flex-center pl-md-4 pr-md-4 mt-xs-3 pb-xs-0">
-            <iframe class="radius-30 back-black-shadow" width="100%" src="https://www.youtube.com/embed/Mh9jclhPYBM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="radius-30 back-black-shadow width-100" src="https://www.youtube.com/embed/Mh9jclhPYBM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
     <section class="flex flex-center align-items-center flex-column back-blue-gradient pt-md-8 pl-md-8-5 pr-md-8-5 pb-md-3 pt-xs-0 white hidden">
@@ -156,7 +156,7 @@
                     duo dolores et ea rebum. Stet clita kasd ".
                 </p>
                 <div class="flex align-items-center pt-2">
-                    <img class="radius-50" src="images/client.jpg" width="80px">
+                    <img class="radius-50 width-80px" src="images/client.jpg">
                     <div class="pl-2-5">
                         <h3 class="bold-700 blue-d">AYA SOLEN</h3>
                         <img class="radius-50" src="images/star.svg">
@@ -173,7 +173,7 @@
                     aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
                     duo dolores et ea rebum. Stet clita kasd ".</p>
                 <div class="flex align-items-center pt-2">
-                    <img class="radius-50" src="images/client.jpg" width="80px">
+                    <img class="radius-50 width-80px" src="images/client.jpg">
                     <div class="pl-2-5">
                         <h3 class="bold-700 blue-d">AYA SOLEN</h3>
                         <img class="radius-50" src="images/star.svg">
@@ -192,7 +192,7 @@
                     aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
                     duo dolores et ea rebum. Stet clita kasd ".</p>
                 <div class="flex align-items-center pt-2">
-                    <img class="radius-50" src="images/client.jpg" width="80px">
+                    <img class="radius-50 width-80px" src="images/client.jpg">
                     <div class="pl-2-5">
                         <h3 class="bold-700 blue-d">AYA SOLEN</h3>
                         <img class="radius-50" src="images/star.svg">
@@ -209,7 +209,7 @@
                     aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
                     duo dolores et ea rebum. Stet clita kasd ".</p>
                 <div class="flex align-items-center pt-2">
-                    <img class="radius-50" src="images/client.jpg" width="80px">
+                    <img class="radius-50 width-80px" src="images/client.jpg">
                     <div class="pl-2-5">
                         <h3 class="bold-700 blue-d">AYA SOLEN</h3>
                         <img class="radius-50" src="images/star.svg">
@@ -229,12 +229,12 @@
         </div>
         <div class="flex flex-column-xs align-items-start pl-xs-2-5 pr-xs-2-5">
             <div>
-                <a href="./"><img src="images/logo.svg" width="208px"></a>
+                <a href="./"><img class="width-208p" src="images/logo.svg"></a>
                 <p class="white mb-2">Empresa especializada em desenvolvimento de sistemas<br/> inovadores e prestações de serviços, direcionados à cultura zero<br/> papel dentro das organizações.</p>
                  <ul class="flex">
-                        <li class="mr-1"><img src="images/fb.svg" height="15em"></li>
-                        <li class="mr-1"><img src="images/insta.svg" height="15em"></li>
-                        <li class="mr-1"><img src="images/linkedin.svg" height="15em"></li>
+                        <li class="mr-1"><img class="h-1em" src="images/fb.svg"></li>
+                        <li class="mr-1"><img class="h-1em" src="images/insta.svg"></li>
+                        <li class="mr-1"><img class="h-1em" src="images/linkedin.svg"></li>
                     </ul>
             </div>
             <div class="flex white">
@@ -265,7 +265,7 @@
         © Copyright 2020, RLV Tecnologia - Todos os direitos reservados.
     </div>
     <a title="Back to top" class="btn flex flex-center align-items-center scroll back-yellow white">
-        <img src="images/arrow.svg" width="30%"> 
+        <img class="width-30" src="images/arrow.svg"> 
     </a>
     <span class="arrow-up glyphicon glyphicon-chevron-up"></span>
     <div id="loader" class="center flex align-items-center flex-center">
