@@ -4,7 +4,7 @@
 
 Disponível em: https://matheushonorato.github.io/paper-capture/
 
-Técnologias utilizadas
+Tecnologias utilizadas
 
 - HTML
 - CSS
