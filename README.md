@@ -1,4 +1,4 @@
-# 👨‍💻 Paper Capture
+# Paper Capture
 
 ## Landing page responsiva desenvolvida para o produto paper capture
 
