@@ -1,20 +1,276 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style type="text/css">
-        html, body { margin: 0; padding: 0; height: 100%; }
-        #bar { height: 32px; background: red; }
-        iframe {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            border: none; padding-top: 32px;
-            box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
-        }
-    </style>
-  </head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.min.css" rel="stylesheet"/>
+    <title>Paper Capture</title>
+</head>
 <body>
-
-<iframe src="https://pontomulti.com.br/dev/indexx.php" title="Iframe Example"></iframe>
-
+    <header>
+        <nav class="flex align-items-center flex-between">
+            <a class="flex flex-start" href="./" id="logo">
+                <img src="images/logo.svg" width="208px">
+            </a>
+            <ul id="menu" class="flex background-transparent">
+                <li class="ml-md-1-8"><a>Quem Somos</a></li>
+                <li class="ml-md-1-8"><a>Softwares</a></li>
+                <li class="ml-md-1-8"><a>Serviços</a></li>
+                <li class="ml-md-1-8"><a>Contato</a></li>
+                <li class="ml-md-1-8"><a>Blog</a></li>
+            </ul>
+            <ul id="contact" class="flex flex-end background-transparent">
+                <li class="flex align-items-center"><img src="images/phone.svg"></li>
+                <li class="flex align-items-center pl-0 pr-0 ml-md-0-313 bold-700 yellow">0800 34 39 026</li>
+                <a><li id="btn-acess-one" class="btn ml-md-1-563 bold-700 back-white back-blue-shadow flex align-items-center black">ENTRAR</li></a>
+                <a><li id="btn-acess-two" class="btn ml-md-1-563 bold-700 back-blue back-blue-shadow flex align-items-center">ENTRAR</li></a>
+            </ul>
+            <span id="hamburger" onclick="getMenu()">
+            </span>
+        </nav>
+    </header>
+    <ul id="menu-responsive" class="flex white flex-column back-blue pl-1-1 pr-1-1">
+        <li class="mt-md-1 bold-700" onclick="exitMenu()"><a>X</a></li>
+        <li class="mt-md-1">Quem Somos</li>
+        <li class="mt-md-1">Softwares</li>
+        <li class="mt-md-1">Serviços</li>
+        <li class="mt-md-1">Contato</li>
+        <li class="mt-md-1">Blog</li>
+        <li class="flex flex-center bold-700 yellow mt-md-1 decoration-none"><img src="images/phone.svg"> 0800 34 39 026</li>
+        <li class="btn btn-action back-green-d back-green-d-shadow mt-md-1 white bold-700 flex align-items-center flex-center">ENTRAR</li>
+    </ul>
+    <section id="banner" class="flex h-70vh back-blue-gradient">
+        <div id="banner-left" class="banner-item white pl-5 pr-2-5 css-typing">
+            <img class="mb-2" src="images/icon-banner-left.svg" width="8%">
+            <h1>O <span class="yellow">Paper Capture</span> é um<br>poderoso software<br>TWAIN.</h1>
+            <h2>Centrado em uma ideia: simplificar a digitalização<br>de documentos.</h2>
+            <button class="btn btn-action back-green-d back-green-d-shadow bold-700 mt-1 white">Saiba Mais</button>
+        </div>
+        <div id="banner-right" class="banner-item">
+            <div id="illustration">
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-center flex-column align-items-center back-blue-gradient pt-2 pl-2-5 pr-2-5 pb-md-3 hidden">
+        <h2 class="bold-700 white font-3 text-center">Recursos essenciais <span class="yellow">feito para você</span></h2>
+        <p class="white max-1060 line-h-2-5 text-center">O Paper Capture é o software de captura de documentos, ideal para serviços de escaneamento, departamentos de escaneamento centralizados
+            dentro de grandes corporações ou empresas que buscam converter um grande acúmulo de arquivos.</p>
+        <div class="white text-left pt-md-10em">
+            <div class="flex max-1060 item">
+                <div class="flex item">
+                    <div class="flex flex-center align-items-base">
+                        <img src="images/scanner.svg" max-width="50%">
+                    </div>
+                    <div class="max-950 pl-md-1-563 pr-md-55 pt-md-2-5">
+                        <h3 class="bold-700">Scannear/Importar</h3>
+                        <p>Funciona com todos os principais scanners e multifuncionais. Opções de importação automática para dispositivos de rede e imagens pré-digitalizadas que podem exigir processamento adicional. Importe arquivos TIFF, PDF, JPEG, BMP.</p>
+                    </div>
+                </div>
+                <div class="flex item">
+                    <div class="flex flex-center align-items-base">
+                        <img src="images/correct.svg" max-width="50%">
+                    </div>
+                    <div class="max-950 pl-md-1-563 pr-md-55 pt-md-2-5">
+                        <h3 class="bold-700">Controle de Qualidade</h3>
+                        <p>Ferramentas de edição, aprimoramento de imagem pós-digitalização, como remoção de manchas, desalinhamento, corte de imagem, remoção de furos, remoção de bordas e muito mais.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex max-1060 item">
+                <div class="flex item">
+                    <div class="flex flex-center align-items-base">
+                        <img src="images/computer.svg" max-width="50%">
+                    </div>
+                    <div class="max-950 pl-md-1-563 pr-md-55 pt-md-2-5">
+                        <h3 class="bold-700">Índice</h3>
+                        <p>Indexe manualmente ou automaticamente através do excel com vários tipos de campos, como texto, número, data. Crie marcadores em PDF manual ou automaticamente a partir dos valores do código de barras.</p>
+                    </div>
+                </div>
+                <div class="flex item">
+                    <div class="flex flex-center align-items-base">
+                        <img src="images/export.svg" max-width="50%">
+                    </div>
+                    <div class="max-950 pl-md-1-563 pr-md-55 pt-md-2-5">
+                        <h3 class="bold-700">Exportar</h3>
+                        <p>Envie imagens e dados para qualquer sistema de gerenciamento corporativo ou estrutura de compartilhamento de arquivos, juntamente com a nomeação automática de arquivos e a criação de pastas para organização e colaboração rápidas e eficientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-md-between align-items-center pl-2-5 pr-2-5 pt-3 pb-3 hidden">
+        <h3 class="blue font-2 mb-xs-1">Comece hoje mesmo com o Paper Capture</h3>
+        <div class="flex flex-md-between">
+            <button class="btn btn-call mt-1em white ml-md-1-1 mb-xs-1">Versão Grátis*</button>
+            <button class="btn btn-call mt-1em white ml-md-1-1">Compre agora</button>
+        </div>
+    </section>
+    <section class="flex flex-center flex-column align-items-center back-blue-gradient pt-md-8 pl-2-5 pr-2-5 pb-md-3 white hidden">
+        <h4 class="bold-700 font-1-7 line-h-1-7">O Paper Caputre é oferecido em três edições diferentes: <span class="yellow">Grátis</span>, <span class="yellow">Home</span> e <span class="yellow">Profissional</span>.</h4>
+        <h4 class="bold-700 font-1-7 line-h-1-7">Veja a comparação abaixo e escolha a versão que atenda a sua necessidade.</h4>
+        <div class="flex flex-column-xs pt-2 width-100 max-950 bold-700 black">
+            <div class="flex flex-column flex-item-1 m-1 p-2 pt-2 back-white radius-20 justify-between">
+                <img class="mb-1" src="images/gift.svg" width="50px">
+                <h3 class="bold-900 green">FREE</h3>
+                <p>A edição gratuita do software Paper Capture permite que os usuários se beneficiem gratuitamente das vantagens de uma ferramenta universal de digitalização* com recursos de processamento.</p>
+                <button class="btn btn-plus mt-1 white max-100 back-green back-green-shadow">BAIXAR</button>
+            </div>
+            <div class="flex flex-column flex-item-1 m-1 p-2 pt-2 back-white radius-20 justify-between">
+                <img class="mb-1" src="images/home.svg" width="50px">
+                <h3 class="bold-900 yellow">HOME</h3>
+                <p>A versão Home do Paper Capture é uma versão leve, permitindo que os usuários com necessidades diárias de digitalização e processamento realizem suas tarefas através de um aplicativo realmente acessível.</p>
+                <button class="btn btn-plus mt-1 white max-100 back-yellow back-yellow-shadow">COMPRAR AGORA</button>
+            </div>
+            <div class="flex flex-column flex-item-1 m-1 p-2 pt-2 back-white radius-20 justify-between">
+                <img class="mb-1" src="images/company.svg" width="50px">
+                <h3 class="bold-900 blue">PROFISSIONAL</h3>
+                <p>A versão Professional do Paper Capture e é a edição mais completa, oferecendo aos usuários finais profissionais todos os recursos necessários, para a captura, indexação e diferentes integrações de armazenamento.</p>
+                <button class="btn btn-plus mt-1 white max-100 back-blue back-blue-shadow">COMPRAR AGORA</button>
+            </div>
+        </div>
+    </section>
+    <section class="flex flex-column-xs back-blue-gradient pt-8 pl-md-8-5 pr-md-8-5 pb-md-3 pb-xs-2 white hidden">
+        <div class="flex flex-column flex-item-3 pr-4">
+            <h2 class="bold-700 font-2">Vídeos tutoriais do Paper Capture</h2>
+            <p>Veja o que o Paper Capture pode fazer!</p>
+            <p>Nossa série de vídeos mostra como configurar o seu scanner e começar a usar os principais recursos do PaperScan.</p>
+            <button class="btn btn-plus mt-1 white max-100 back-yellow back-yellow-shadow">COMPRAR AGORA</button>
+        </div>
+        <div class="flex flex-item-5 flex-center pl-md-4 pr-md-4 mt-xs-3 pb-xs-0">
+            <iframe class="radius-30 back-black-shadow" width="100%" src="https://www.youtube.com/embed/Mh9jclhPYBM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="flex flex-center align-items-center flex-column back-blue-gradient pt-md-8 pl-md-8-5 pr-md-8-5 pb-md-3 pt-xs-0 white hidden">
+        <h2 class="font-2 yellow">Comparação das versões do Paper Capture</h2>
+        <p class="text-center text-xs-left">Para saber qual edição atende às suas necessidades, você pode ler a Matriz de Comparação abaixo.<br>
+        Se ainda estiver indeciso, entre em contato conosco através deste Formulário de contato e a equipe de vendas terá prazer em ajudar.</p>
+        <button class="btn mt-1 white back-yellow back-yellow-shadow">VEJA AQUI</button>
+    </section>
+    <section class="flex flex-center align-items-center flex-column back-white pt-md-6 pl-md-8-5 pr-md-8-5 white pb-md-16 hidden">
+        <h4 class="bold-700 font-1-7 line-h-1-7 black-d text-center">O que nossos clientes andam<br>dizendo sobre nós</h4>
+        <div class="flex black pt-2 flex-column-md">
+            <div class="client-block flex p-2 flex-column">
+                <p class="italic">" Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                    nonumy eirmod tempor invidunt ut labore et dolore magna 
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
+                    duo dolores et ea rebum. Stet clita kasd ".
+                </p>
+                <div class="flex align-items-center pt-2">
+                    <img class="radius-50" src="images/client.jpg" width="80px">
+                    <div class="pl-2-5">
+                        <h3 class="bold-700 blue-d">AYA SOLEN</h3>
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="client-block flex p-2 flex-column">
+                <p class="italic">" Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                    nonumy eirmod tempor invidunt ut labore et dolore magna 
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
+                    duo dolores et ea rebum. Stet clita kasd ".</p>
+                <div class="flex align-items-center pt-2">
+                    <img class="radius-50" src="images/client.jpg" width="80px">
+                    <div class="pl-2-5">
+                        <h3 class="bold-700 blue-d">AYA SOLEN</h3>
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex black flex-column-md">
+            <div class="client-block flex p-2 flex-column">
+                <p class="italic">" Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                    nonumy eirmod tempor invidunt ut labore et dolore magna 
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
+                    duo dolores et ea rebum. Stet clita kasd ".</p>
+                <div class="flex align-items-center pt-2">
+                    <img class="radius-50" src="images/client.jpg" width="80px">
+                    <div class="pl-2-5">
+                        <h3 class="bold-700 blue-d">AYA SOLEN</h3>
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="client-block flex p-2 flex-column">
+                <p class="italic">" Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                    nonumy eirmod tempor invidunt ut labore et dolore magna 
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo 
+                    duo dolores et ea rebum. Stet clita kasd ".</p>
+                <div class="flex align-items-center pt-2">
+                    <img class="radius-50" src="images/client.jpg" width="80px">
+                    <div class="pl-2-5">
+                        <h3 class="bold-700 blue-d">AYA SOLEN</h3>
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                        <img class="radius-50" src="images/star.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <footer class="flex flex-column align-items-center flex-center back-blue-d pb-4 hidden mb-0">
+        <div id="footer-relative" class="flex flex-between align-items-center flex-column-xs width-82 back-white p-3 pl-xs-0 pr-xs-0 radius-20 relative top-m-70">
+            <h2 class="black bold-700 font-2">Você quer ter mais informações?</h2>
+            <button class="btn btn-action back-blue-d back-blue-d-shadow white radius-50 pl-35 pr-35">Envie pra nós um email</button>
+        </div>
+        <div class="flex flex-column-xs align-items-start pl-xs-2-5 pr-xs-2-5">
+            <div>
+                <a href="./"><img src="images/logo.svg" width="208px"></a>
+                <p class="white mb-2">Empresa especializada em desenvolvimento de sistemas<br/> inovadores e prestações de serviços, direcionados à cultura zero<br/> papel dentro das organizações.</p>
+                 <ul class="flex">
+                        <li class="mr-1"><img src="images/fb.svg" height="15em"></li>
+                        <li class="mr-1"><img src="images/insta.svg" height="15em"></li>
+                        <li class="mr-1"><img src="images/linkedin.svg" height="15em"></li>
+                    </ul>
+            </div>
+            <div class="flex white">
+                <ul class="flex line-h-2-5 flex-column-xs">
+                    <ul class="flex flex-column pl-md-5">
+                        <li class="bold-700">INÍCIO</li>
+                        <li>Por quê usar nosso serviço?</li>
+                        <li>Como trabalhamos?</li>
+                        <li>Depoimentos</li>
+                    </ul>
+                    <ul class="flex flex-column pl-md-5">
+                        <li class="bold-700">EMPRESA</li>
+                        <li>Sobre nós</li>
+                        <li>Contato</li>
+                        <li>Blog</li>
+                    </ul>
+                    <ul class="flex flex-column pl-md-5">
+                        <li class="bold-700">ENDEREÇO</li>
+                        <li>Rua Heitor Pereira de Aguiar, 69
+                            <br>Centro - Montezuma - MG.</li>
+                        <li>(38) 3439-0269 </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="width-100 text-center bt-1p-white back-blue-d white pt-1 pb-1">
+        © Copyright 2020, RLV Tecnologia - Todos os direitos reservados.
+    </div>
+    <a title="Back to top" class="btn flex flex-center align-items-center scroll back-yellow white">
+        <img src="images/arrow.svg" width="30%"> 
+    </a>
+    <span class="arrow-up glyphicon glyphicon-chevron-up"></span>
+    <div id="loader" class="center flex align-items-center flex-center">
+        <div id="loader-a" ></div>
+    </div>
+    <script src="js/index.min.js"></script>
 </body>
 </html>
